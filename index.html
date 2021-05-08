@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <p>چند بار برنده شده : <span id="result-win">0</span></p>
+        <p>چند بار بازنده شده : <span id="result-lose">0</span></p>
+    </header>
+
+    <section id="menu">
+        <div class="hands">
+            <div class="hand"></div>
+            <div class="fist"></div>
+        </div>
+
+        <h2>به بازی خوش آمدی</h2>
+        <br><br>
+        <div class="input-container">
+            <label for="count">تعداد دست ها : </label>
+            <input value="3" min="3" max="10" type="number" id="count" placeholder="تعداد دست ها">
+        </div>
+        <br>
+        <button onclick="start()">بزن بریم</button>
+    </section>
+
+    <section id="game" style="display: none;">
+        <div class="hands"></div>
+        <br><br>
+        <div class="input-container">
+            <input checked type="radio" name="that" id="empty" onchange="that = 'empty'">
+            <label for="empty">پوچه</label>
+        </div>
+        <div class="input-container">
+            <input type="radio" name="that" id="full" onchange="that = 'full'">
+            <label for="full">گله</label>
+        </div>
+    </section>
+</body>
+
+</html>

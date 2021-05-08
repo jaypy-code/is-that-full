@@ -1,0 +1,53 @@
+* {
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+header {
+  position: fixed;
+  right: 10px;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+div.hands {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+div.hands div.hand,
+div.hands div.fist {
+  width: 100px;
+  height: 100px;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  margin: 10px;
+}
+
+div.hands div.hand {
+  background-image: url("/hand.svg");
+}
+
+div.hands div.fist {
+  background-image: url("/fist.svg");
+}
+
+section#game div.hands div.fist {
+  cursor: help;
+}
