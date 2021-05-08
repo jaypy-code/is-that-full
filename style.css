@@ -41,11 +41,11 @@ div.hands div.fist {
 }
 
 div.hands div.hand {
-  background-image: url("/hand.svg");
+  background-image: url("./hand.svg");
 }
 
 div.hands div.fist {
-  background-image: url("/fist.svg");
+  background-image: url("./fist.svg");
 }
 
 section#game div.hands div.fist {
